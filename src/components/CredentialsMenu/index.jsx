@@ -5,6 +5,9 @@ import { Glyphicon, NavDropdown, NavItem, MenuItem } from 'react-bootstrap';
 import Icon from 'react-fontawesome';
 import { loadable } from '../../utils';
 
+const url = '//github.com/taskcluster/taskcluster-tools/tree/';
+const commit = process.env.COMMITHASH;
+const link = url + commit;
 const Auth0LoginMenuItem = loadable(() =>
   import(/* webpackChunkName: 'Auth0LoginMenuItem' */ '../../auth/Auth0LoginMenuItem')
 );
@@ -61,6 +64,9 @@ class CredentialsMenu extends PureComponent {
             <Icon name="key" /> Manage Credentials
           </MenuItem>
         </LinkContainer>
+        <MenuItem href={link}>
+          <Icon name="key" /> Current version
+        </MenuItem>
         <NavItem onSelect={() => authController.setUserSession(null)}>
           <Glyphicon glyph="log-out" /> Sign Out
         </NavItem>
