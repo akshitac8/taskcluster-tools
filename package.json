@@ -34,6 +34,7 @@
     "font-awesome": "^4.7.0",
     "font-awesome-svg-png": "^1.1.5",
     "fscreen": "^1.0.2",
+    "git-revision-webpack-plugin": "^2.5.1",
     "highlight.js": "^9.6.0",
     "hterm-umd": "^1.0.1",
     "husky": "^0.14.3",
@@ -54,7 +55,7 @@
     "ramda": "^0.24.1",
     "react": "^15.5.4",
     "react-addons-css-transition-group": "^15.6.2",
-    "react-bootstrap": "^0.31.5",
+    "react-bootstrap": "^0.31.3",
     "react-datepicker": "^0.61.0",
     "react-dom": "^15.5.4",
     "react-fontawesome": "^1.6.1",
@@ -80,8 +81,5 @@
   "optionalDependencies": {
     "bufferutil": "^3.0.2",
     "utf-8-validate": "^3.0.3"
-  },
-  "devDependencies": {
-    "git-revision-webpack-plugin": "^2.5.1"
   }
 }
