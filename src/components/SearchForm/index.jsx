@@ -25,7 +25,7 @@ export default class SearchForm extends Component {
     this.setState({ value: e.target.value });
   };
 
-  handleSearchChange = () => this.props.onSearch(this.state.value);
+  handleSearch = () => this.props.onSearch(this.state.value);
 
   handleSubmit = e => {
     e.preventDefault();
@@ -44,7 +44,7 @@ export default class SearchForm extends Component {
                 onChange={this.handleSearchChange}
                 type="text"
               />
-              <InputGroup.Addon onClick={this.handleSearchChange} role="button">
+              <InputGroup.Addon onClick={this.handleSearch} role="button">
                 <Glyphicon glyph="search" />
               </InputGroup.Addon>
             </InputGroup>
